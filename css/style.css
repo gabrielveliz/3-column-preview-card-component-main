@@ -1,0 +1,126 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+/* ***********  */
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    margin-top: 10%;
+}
+.contenedor{
+    width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:500px) {
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+}
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+.izq{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+@media (max-width:500px) {
+    .izq{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0rem;
+    }
+}
+.cyan{
+    background-color:hsl(184, 100%, 22%) ;
+    color: hsl(184, 100%, 22%) ;
+}
+
+.verycyan{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);;
+}
+
+.der{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+@media (max-width:500px) {
+    .der{
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+        }   
+    }
+
+.columnas{
+    padding: 3rem;
+}
+
+.titulo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin-top: 2rem;
+}
+
+.parrafo{
+    font-size:1.5rem ;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-top: 2rem;
+    line-height : 2.5rem;
+}
+
+.boton{
+    width: 60%;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.boton:hover{
+    background-color: hsla(0, 0%, 95%,0.1);
+    color:hsla(0, 0%, 100%, 0.75);
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    .boton{
+        width: 50%;
+    }
+    .boton:hover{
+    padding: 9px;
+    }
+}
+
+footer{
+    margin-top: 2rem;
+    color: grey;
+}
